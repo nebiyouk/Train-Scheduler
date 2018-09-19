@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Train Scheduler</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<!-- Add icon library -->
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- linked to css file -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!-- Google font library file -->
+	<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+</head>
+<embed src="assets/music/Kenny_G_-_Havana_Pesni-Tut.mp3" loop = "true" height = "0px" width = "0px">
+<body class="#78909c blue-grey lighten-1">
+	<div class="center-align">
+		<div class="container-fluid">
+			<div class="nav-extended">
+				<div class="nav-content">
+					<span class="nav-title"> </i><i class="fas fa-train"></i>TRAIN TIME TABLES</span>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<br>
+			<div id="row1" class="z-depth-1 center-align #37474f blue-grey-text text-darken-3 #546e7a blue-grey darken-1"><span
+				 class="secondaryTitles">Current Train Schedule</span>
+				<table>
+					<thead>
+						<tr class="#fafafa grey-text text-lighten-5">
+							<th>Train Name</th>
+							<th>Destination</th>
+							<th>Frequency (min)</th>
+							<th>Next Arrival</th>
+							<th>Minutes Away</th>
+						</tr>
+					</thead>
+					<tbody class="center-align #e0e0e0 grey-text text-lighten-2" id="tableBody">
+					</tbody>
+				</table>
+			</div>
+			<br>
+			<div id="row2" class="row z-depth-1 center-align #37474f blue-grey-text text-darken-3 #546e7a blue-grey darken-1">
+				<span class="secondaryTitles">Add Train</span>
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s6">
+							<input placeholder="Train Name" id="trainName" type="text" class="validate">
+							<label for="Train Name"></label>
+						</div>
+						<div class="input-field col s6">
+							<input placeholder="Destination" id="destination" type="text" class="validate">
+							<label for="Role"></label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input placeholder="Frequency (min)" id="frequency" type="number" class="validate">
+							<label for="startDate"></label>
+						</div>
+						<div class="input-field col s6">
+							<input placeholder="First Train Time (HH: mm - military)" id="firstTrainTime" type="text" class="validate">
+							<label for="firstTrainTime"></label>
+						</div>
+					</div>
+					<div class="row">
+						<button id="addTrain" type="submit" class="btn #388e3c green darken-2">Add Train</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<script src="assets/javascript/logic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+body {
+    background-image: url("../images/HogwartsExpress_PM_HogwartsExpressGoingThroughCountryside_Moment.jpg");
+  }
+  .nav-title {
+      font-size: 617%;
+  font-family: 'Catamaran', sans-serif;
+      color: white;
+  
+  }
+  
+  .container .row {
+      margin-left: 0.30rem;
+      margin-right: 0.26rem;
+  }
+  
+  
+   .input-field label {
+       color: #d32f2f;
+     }
+  
+  
+    /* label focus color */
+     .input-field input[type=text]:focus + label {
+       color: #d32f2f;
+     }
+  
+       /* label underline focus color */
+     .input-field input[type=text]:focus {
+       border-bottom: 1px solid #d32f2f ;
+       box-shadow: 0 1px 0 0 #d32f2f ;
+     }
+     .secondaryTitles {
+      font-family: "Arvo", serif;
+      font-size  : 4em;
+      font-weight: normal;
+      text-align : center;
+  
+      margin : 1% 0;
+      padding: 0;
+  
+      -webkit-animation-name    : rainbow; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 6s;
+      animation-name            : rainbow;
+      animation-duration        : 6s;
+      animation-iteration-count : infinite;
+        }
+        @keyframes rainbow {
+          0%   { color: #97E649; }
+          16%  { color: #35fec8; }
+          33%  { color: #35a9fe; }
+          49%  { color: #e135fe; }
+          66%  { color: #FE6C52; }
+          82%  { color: #F4EE44; }
+          100% { color: #97E649; }
+        }
+        
+     th {
+      letter-spacing: 0.7px;
+    }
+  
+    #row1 {
+  
+      padding: 2%;
+    }
+  
+    #row2 {
+      margin-left: 0rem;
+      margin-right: 0rem;
+      padding: 1%;
+  }
